@@ -1,0 +1,930 @@
+.header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 100;
+}
+
+.header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 28px 0;
+}
+
+.header__logo {
+   width: 171px;
+}
+
+.active {
+   backdrop-filter: blur(13px);
+}
+
+.header-active {
+   background-color: #010221;
+}
+
+.header-btn-active {
+   background-color: rgba(1, 2, 33, 1);
+}
+
+.logo__wrap {
+   width: 264px;
+}
+
+.nav {
+   margin-bottom: -4px;
+}
+
+.nav__menu {
+   display: flex;
+   padding: 4px;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+.nav__list {
+   padding: 12px 24px;
+}
+
+.nav__list:hover {
+   opacity: 1;
+   color: #E19937;
+}
+
+
+.nav__list--active {
+   background: rgba(255, 255, 255, 0.06);
+   backdrop-filter: blur(13px);
+   border-radius: 12px;
+   opacity: 1;
+}
+
+.header__right {
+   display: flex;
+}
+
+.header__links {
+   display: flex;
+   gap: 8px;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+.header__modal-btn {
+   border-radius: 16px;
+   position: relative;
+   background: #010221;
+   padding: 16px 28px;
+}
+
+.header__modal-btn::before {
+   border-radius: 16px;
+   content: "";
+   position: absolute;
+   top: -1px;
+   bottom: -1px;
+   left: -1px;
+   right: -1px;
+   background: linear-gradient(165deg, #247ACA, #8CDDFF);
+   z-index: -1;
+}
+
+.facebook__btn,
+.linkedIn__btn {
+   background-color: rgba(255, 255, 255, 0.02);
+   border: 0.5px solid rgba(255, 255, 255, 0.16);
+   backdrop-filter: blur(13px);
+   border-radius: 16px;
+   padding: 18px;
+   width: 54px;
+   height: 54px;
+}
+
+/* ------------------------DROPDOWN START----------------------------------- */
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+   margin-bottom: -6px;
+
+}
+
+.dropbtn {
+   border: none;
+   align-items: center;
+   background: transparent;
+   padding: 3px 3px 3px 3px;
+}
+
+.dropbtn svg path {
+   stroke: #fff;
+   cursor: pointer;
+}
+
+
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   z-index: 1;
+   width: 320px;
+   height: fit-content;
+   left: calc(50% - 251px/2 + 62px);
+   background: #F1EDE3;
+   border-radius: 12px;
+   color: #E19937;
+   margin-top: 18px;
+   overflow: hidden;
+}
+
+.dropdown-link {
+   width: 100%;
+   height: 44px;
+   align-items: center;
+   position: relative;
+   padding: 12px 24px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+}
+
+.dropdown-link:hover {
+   background: #E98C00;
+   color: #FFFFFF;
+}
+
+
+.dropdown:hover .dropdown-content {
+   display: block;
+   z-index: 20;
+   display: flex;
+   flex-direction: column;
+}
+
+.dropdown:hover .dropbtn svg path {
+   stroke: #FFFFFF;
+   cursor: pointer;
+}
+
+/* ------------------------DROPDOWN END----------------------------------- */
+
+
+
+/* --------------------HAMBURGER MENU START---------------------- */
+
+.navbar {
+   background: #333847;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   right: 0;
+   transition-timing-function: cubic-bezier(10, 2, 3, 1);
+   transform: translateY(-200%);
+   top: 0;
+   left: 0;
+   bottom: 0;
+   z-index: 0;
+   transition: 0.5s;
+   border-bottom: 1px solid #FFFFFF25;
+}
+
+.navbar .main-bg-img {
+   bottom: -470px;
+}
+
+.navbar-header {
+   padding: 40px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar-header__links {
+   display: flex;
+}
+
+.navbar__inner {
+
+   position: relative;
+}
+
+.navbar__btn {}
+
+.navbar-header-btn {}
+
+.navbar__btn {}
+
+.header-logo {
+   width: 127px;
+}
+
+
+
+.navbar-content {
+   margin-top: 66px;
+}
+
+.navbar-content-links {
+   display: flex;
+   gap: 32px;
+   flex-direction: column;
+   margin-bottom: 20px;
+   font-weight: 500;
+   font-size: 28px;
+   line-height: 34px;
+}
+
+.navbar-content-link:hover {
+   color: #E19937;
+}
+
+.navbar-content-text {}
+
+.navbar-content-services {
+   display: flex;
+   gap: 28px;
+   flex-direction: column;
+   padding-left: 20px;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 27px;
+}
+
+.navbar-content-services-link:hover {
+   color: #E19937;
+}
+
+.navbar-content-services-link {}
+
+.brgMenu__btn {
+   display: flex;
+   padding: 11px 12px;
+   background-color: #52C652;
+   color: #fff;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 22px;
+   gap: 6px;
+   max-width: 241px;
+   justify-content: center;
+   margin: 13px auto 20px;
+}
+
+
+.navbar-footer {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   display: flex;
+   padding: 20px 80px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+.hamb {
+   cursor: pointer;
+   padding: 20px 12px 12px;
+   z-index: 50;
+   display: none;
+}
+
+.hamb-line {
+   background: #FFFFFF;
+   display: block;
+   height: 2px;
+   position: relative;
+   width: 34px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+   content: '';
+   background: #FFFFFF;
+   display: block;
+   height: 100%;
+   position: absolute;
+   transition: all .2s ease-out;
+   width: 100%;
+}
+
+.hamb-line::before {
+   top: 6px;
+}
+
+.hamb-line::after {
+   top: -6px;
+}
+
+.side-menu {
+   display: none;
+}
+
+.side-menu:checked~.navbar {
+   z-index: 10;
+   transform: translateY(0%);
+   top: 0;
+   left: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+   background: transparent;
+
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+   transform: rotate(-45deg);
+   top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+   transform: rotate(45deg);
+   top: 0;
+}
+
+.btnOpenMenu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6px 6px 6px 6px;
+   width: fit-content;
+   height: 34px;
+   background: #E19937;
+   backdrop-filter: blur(12px);
+   border-radius: 10px;
+   margin-left: 12px;
+   display: none;
+}
+
+/* --------------------HAMBURGER MENU END---------------------- */
+
+/* свойства модального окна по умолчанию */
+.modal {
+   position: fixed;
+   /* фиксированное положение */
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(51, 56, 71, 0.83);
+   /* цвет фона */
+   z-index: 1050;
+   opacity: 0;
+   /* анимация перехода */
+   pointer-events: none;
+   /* элемент невидим для событий мыши */
+
+}
+
+/* при отображении модального окно */
+.modal:target {
+   opacity: 1;
+   pointer-events: auto;
+   overflow-y: auto;
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+   position: relative;
+   width: auto;
+   top: calc(50% - (600px / 2));
+   margin: 14px;
+}
+
+@media (min-width: 576px) {
+   .modal-dialog {
+      max-width: 895px;
+      margin: 30px auto;
+   }
+}
+
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+   /* position: relative;
+   display: flex;
+   overflow: hidden;
+   flex-direction: column;
+   background: #FFFFFF;
+   backdrop-filter: blur(56px);
+   outline: 0;
+   color: #fbfbfb;
+   max-width: 480px;
+   height: 461px;
+   padding: 32px; */
+   /* margin:  0 auto; */
+}
+
+.modal-content .form__wrap {
+   margin: 0 auto;
+   min-width: 783px;
+   border-radius: 24px;
+   background: #F1EDE3;
+   border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.modal-content .form__wrap .input {
+   width: 319px;
+}
+
+.modal-content .form__wrap .input__message {
+   width: 100%;
+}
+
+a .close {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 22px;
+   color: #FFF;
+   padding: 8px 16px;
+   min-width: 319px;
+
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+   position: relative;
+
+   padding: 32px 63px;
+   overflow: auto;
+}
+
+.modal__form,
+.modal__title {
+   z-index: 1060;
+}
+
+.modal-top {
+   display: flex;
+   margin-bottom: 18px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.modal__title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   font-feature-settings: 'salt' on;
+   color: #000000;
+}
+
+.modal__btn-wrap .form-modal__btn {
+   min-width: 100%;
+}
+
+.modal__btn-wrap {
+   display: flex;
+}
+
+.modal__close-btn {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   min-width: 319px;
+}
+
+.modal__desc {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+   color: #000000;
+   opacity: 0.72;
+   margin-bottom: 18px;
+}
+
+/* .modal__name,
+.modal__email,
+.modal__subject,
+.modal__message,
+.modal__name1,
+.modal__email1,
+.modal__subject1,
+.modal__message1 {
+   width: 100%;
+   padding: 12px 16px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: #000000;
+   outline: none;
+} */
+
+
+input:hover {
+   border: 0.5px solid #E19937;
+}
+
+input:focus {
+   border: 0.5px solid #E19937;
+}
+
+.modal__message {
+   height: 96px;
+   resize: none;
+}
+
+.modal__btns {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   justify-content: center;
+}
+
+.modal__btn,
+.modal__btn1 {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 22px;
+   color: #FFFFFF;
+   display: flex;
+   padding: 0 10px 0 20px;
+   align-items: center;
+   width: 135px;
+   height: 38px;
+   justify-content: space-between;
+   position: relative;
+   border: 0;
+
+}
+
+.btn-icon-wrap {
+   padding: 13px;
+   background-color: rgba(255, 255, 255, 0.24);
+   border-radius: 12px;
+   height: 50px;
+   position: absolute;
+   right: 10px;
+   bottom: 10px;
+   justify-content: center;
+}
+
+.btn-icon-wrap svg {
+   fill: rgba(255, 255, 255, 0.20);
+   stroke: #FFFFFF;
+}
+
+.modal__icon,
+.modal__desc,
+.modal__btn {
+   z-index: 1060;
+}
+
+.bg-img__transition-b-l-modal {
+   left: 0;
+   width: 100%;
+}
+
+.modal-underline {
+   width: 100%;
+   height: 1px;
+   background-color: #000;
+   opacity: 0.1;
+}
+
+.form-close__btn {
+   position: absolute;
+   top: 40px;
+   right: 40px;
+   opacity: 0.4;
+   z-index: 110;
+}
+
+.form-close__btn:hover {
+   opacity: 1;
+}
+
+/* ------------------------------------SUCCESE------------------------------------ */
+
+.succes-modal {
+   position: fixed;
+   /* фиксированное положение */
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(51, 56, 71, 0.83);
+   /* цвет фона */
+   z-index: 1050;
+   opacity: 0;
+   /* анимация перехода */
+   pointer-events: none;
+   /* элемент невидим для событий мыши */
+}
+
+/* при отображении модального окно */
+.succes-modal:target {
+   opacity: 1;
+   pointer-events: auto;
+   overflow: auto;
+}
+
+.succes-dialog {
+   position: relative;
+   width: auto;
+   top: calc(50% - (500px / 2));
+   margin: 14px;
+}
+
+@media (min-width: 576px) {
+   .succes-dialog {
+      max-width: 895px;
+      margin: 30px auto;
+   }
+}
+
+.succes-content {
+   position: relative;
+   display: flex;
+   overflow: hidden;
+   flex-direction: column;
+   background: #F1EDE3;
+   border: 1px solid rgba(255, 255, 255, 0.16);
+   border-radius: 16px;
+   color: #000000;
+   outline: 0;
+   max-width: 480px;
+   height: fit-content;
+   margin: auto;
+}
+
+@media (min-width: 768px) {
+   .succes-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+   }
+}
+
+.succes__inner {
+   text-align: center;
+   position: relative;
+   z-index: 1080;
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.succes__btn-inner {
+   padding: 18px 32px 32px 32px;
+}
+
+.succes__top {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.succes__img {
+   width: 20px;
+   margin: 0 auto 8px;
+}
+
+.succes__title {
+   font-weight: 500;
+   font-size: 35px;
+   line-height: 42px;
+   margin-bottom: 24px;
+}
+
+.succes__desc {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+}
+
+.succes__btn {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 22px;
+   color: #FFFFFF;
+   display: flex;
+   background: #52C652;
+   padding: 8px 16px;
+   align-items: center;
+   width: 101px;
+   height: 38px;
+   justify-content: space-between;
+   margin: 0 auto;
+}
+
+/* ------------------------------------OOOOPS------------------------------------ */
+
+.ooops__inner {
+   color: #000;
+   padding: 8px 0 0;
+   padding: 32px;
+}
+
+.ooops__top {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 16px;
+}
+
+.ooops__top-text {
+   display: flex;
+   gap: 8px;
+}
+
+.ooops__title {
+   font-weight: 500;
+   font-size: 35px;
+   line-height: 42px;
+}
+
+.ooops__desc {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+}
+
+.ooops__btns {
+   display: flex;
+   justify-content: end;
+   gap: 16px;
+}
+
+.ooops__btns {
+   padding: 18px 32px 32px 32px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.ooops__btn {
+   max-width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+
+   .header__links .facebook__btn,
+   .header__links .linkedIn__btn {
+      display: none;
+   }
+
+   .logo__wrap {
+      width: 120px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+
+   .form-modal__name,
+   .form-modal__surname,
+   .form-modal__email,
+   .form-modal__subject {
+      min-width: 100%;
+   }
+
+   .input__wrap {
+      flex-direction: column;
+      gap: 14px;
+   }
+}
+
+@media screen and (max-width: 864px) {
+   .header__inner .nav {
+      display: none
+   }
+
+   .hamb {
+      display: block;
+      position: absolute;
+      left: calc(50% - (58px / 2));
+   }
+
+   .logo__wrap {
+      width: fit-content;
+   }
+
+   .btnOpenMenu {
+      display: block;
+   }
+
+   .header__btn {
+      height: 34px !important;
+   }
+
+   .header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .modal-content .form__wrap {
+      min-width: 100%;
+   }
+
+   .modal-content {
+      margin: 0;
+   }
+
+   .modal-dialog {
+      margin: 0;
+      top: calc(50% - (555px / 2));
+      padding: 0 16px;
+   }
+
+   .modal__btn-wrap {
+      flex-direction: column;
+   }
+
+   .form-modal__btn {
+      margin-bottom: 0;
+   }
+
+   .form-close__btn {
+      top: 24px;
+      right: 24px;
+   }
+
+   .navbar-footer {
+      padding: 40px 40px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .header__inner {
+      padding: 20px 0;
+   }
+
+   .header__modal-btn {
+      width: 118px;
+      height: 38px;
+      padding: 8px 14px;
+      font-size: 12px;
+      line-height: 22px;
+      border-radius: 12px;
+   }
+
+   .header__modal-btn::before {
+      border-radius: 12px;
+   }
+
+   .header__logo {
+      width: 127px;
+   }
+
+   .header__btn {
+      padding: 8px 14px !important;
+   }
+
+   .navbar-header {
+      padding: 20px 0;
+   }
+
+   .header__links {
+      gap: 0;
+   }
+
+   .btnOpenMenu {
+      height: 34px;
+      width: 34px;
+      padding: 4px;
+   }
+
+   .btnOpenMenu .btnIcon__wrap {
+      width: 24px;
+      height: 24px;
+      padding: 0;
+   }
+}
+
+@media (max-width: 500px) {
+   .navbar-footer {
+      padding: 40px 20px;
+   }
+}
+
+@media screen and (max-width: 425px) {
+
+   .modal-content .form__wrap .input {
+      min-width: 100%;
+      width: 100%;
+   }
+
+   .modal__btn-wrap .form-modal__btn {
+      min-width: 100%;
+   }
+
+   .modal__close-btn {
+      min-width: 100%;
+   }
+}
+
+@media (max-width: 375px) {
+
+   .header__logo,
+   .header-logo {
+      width: 100px;
+   }
+}

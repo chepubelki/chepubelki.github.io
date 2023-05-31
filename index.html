@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Service Synergy</title>
+   <link rel="icon" type="image/x-icon" href="./img/favicon-icon.svg">
+   <link rel="stylesheet" href="./css/index.css">
+   <script src="./js/header.js" defer></script>
+   <script src="./js/modal.js" defer></script>
+   <script src="./js/learnMore.js" defer></script>
+   <script src="./js/menuLinks.js" defer></script>
+</head>
+
+<body>
+
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <div class="header__inner">
+               <div class="logo__wrap">
+                  <a href="./index.html">
+                     <img class="header__logo" src="./img/header-logo.svg" alt="softambed logo">
+                  </a>
+               </div>
+
+               <div class="header__right">
+                  <nav class="nav">
+                     <ul class="nav__menu">
+                        <li class="nav__list">
+                           <a class="nav__list-link" href="#whatwedo">About</a>
+                        </li>
+                        <li class="nav__list dropdown">
+                           <a class="nav__list-link" href="#whatwedo">Services</a>
+                           <button class="dropbtn"><svg width="7" height="5" viewBox="0 0 7 5" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M3.93301 4.75C3.74056 5.08333 3.25944 5.08333 3.06699 4.75L0.901924 1C0.709474 0.666666 0.950037 0.25 1.33494 0.25L5.66506 0.25C6.04996 0.25 6.29053 0.666667 6.09808 1L3.93301 4.75Z"
+                                    fill="white" />
+                              </svg>
+                           </button>
+                           <div class="dropdown-content">
+                              <a class="dropdown-link" href="#legal">Legal Consultancy
+                              </a>
+                              <a class="dropdown-link" href="#business">Business Incorporation
+                              </a>
+                              <a class="dropdown-link" href="#banks">Banks & Alternative Payment Solutions
+                              </a>
+                              <a class="dropdown-link" href="#aml">AML & Compliance
+                              </a>
+                              <a class="dropdown-link" href="#hr">HR & Office Rent
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                  </nav>
+
+                  <div class="header__links">
+
+                  </div>
+
+                  <input class="side-menu" type="checkbox" id="side-menu" />
+                  <!-- Menu -->
+                  <div class="navbar">
+                     <img class="main-bg-img" src="./img/main-bg-img.svg" alt="bg img">
+                     <div class="container">
+                        <div class="navbar__inner">
+                           <div class="navbar-header">
+                              <a class="header-logo-link" href="./index.html">
+                                 <img class="header-logo" src="./img/header-logo.svg" alt="icon">
+                              </a>
+                              <div class="navbar-header__links">
+                                 <a href="#openModal" class="header__btn btn">
+                                    Contact Us
+                                    <img class="btn-logo" src="./img/btn-icon.svg" alt="icon">
+                                 </a>
+                                 <input class="side-menu" type="checkbox" id="side-menu" />
+                                 <label class="btnOpenMenu" for="side-menu">
+                                    <div class="btnIcon__wrap  menuBtnIcon__wrap">
+                                       <img class="btn-icon" src="./img/open-modal-btn-icon.svg" alt="icon">
+                                    </div>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="navbar-content">
+                              <div class="navbar-content-links">
+                                 <a class="navbar-content-link" href="#whatwedo">About</a>
+                                 <p class="navbar-content-text">Services</p>
+                              </div>
+                              <div class="navbar-content-services">
+                                 <a href="#legal" class="navbar-content-services-link">Legal Consultancy </a>
+                                 <a href="#business" class="navbar-content-services-link">Business Incorporation </a>
+                                 <a href="#banks" class="navbar-content-services-link">Banks & Alternative Payment
+                                    Solutions </a>
+                                 <a href="#aml" class="navbar-content-services-link">AML & Compliance </a>
+                                 <a href="#hr" class="navbar-content-services-link">HR & Office Rent</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="navbar-footer">
+                           <p class="navbar-footer__link">©2023 servicesynergy.io</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="header__links">
+                     <a href="#openModal" class="header__btn btn">
+                        Contact Us
+                        <img class="btn-logo" src="./img/btn-icon.svg" alt="icon">
+                     </a>
+                     <input class="side-menu" type="checkbox" id="side-menu" />
+                     <label class="btnOpenMenu" for="side-menu">
+                        <div class="btnIcon__wrap menuBtnIcon__wrap">
+                           <img class="btn-icon" src="./img/close-modal-btn-icon.svg" alt="icon">
+                        </div>
+                     </label>
+                  </div>
+               </div>
+               <!-- -------------------------MODAL START----------------------- -->
+
+               <div id="openModal" class="modal">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <form class="form__wrap">
+                           <a class="form-close__btn" href="#close"><img src="./img/close-icon.svg" alt="icon"></a>
+                           <div class="form-wrap__top">
+                              <h2 class="form__title">Ready to work with us?</h2>
+                           </div>
+                           <div class="input__wrap">
+                              <input class="form-modal__name input__name input" name="name" type="text"
+                                 placeholder="Name" required>
+                              <input class="form-modal__email input__email input" name="email" type="email"
+                                 placeholder="E-mail" required>
+                           </div>
+                           <textarea class="form-modal__message input__message input" name="message" id="ilwgstrbu"
+                              cols="30" rows="10" placeholder="Message"></textarea>
+                           <div class="checkbox">
+                              <div class="checkbox__wrap">
+                                 <input type="checkbox" id="checkbox1" class="form-modal__checkbox1 input__checkbox"
+                                    required name="agreement">
+                                 <label for="checkbox1">
+                                    <p> I have read and accept the <span class="text-underline">General Terms</span> and
+                                       <span class="text-underline">Conditions</span> and the <span
+                                          class="text-underline">Privacy Policy</span>.
+                                    </p>
+                                 </label>
+                              </div>
+                              <div class="checkbox__wrap">
+                                 <input type="checkbox" id="checkbox2"
+                                    class="form-modal__checkbox2 input__checkbox checkbox2" name="subscription">
+                                 <label for="checkbox2">I want to receive notifications about the latest
+                                    products, events and cutting-edge ideas.</label>
+                              </div>
+                           </div>
+                           <div class="modal__btn-wrap">
+                              <button class="form-modal__btn btn" type="submit">Send message <img
+                                    src="./img/btn-icon.svg" alt="icon"></button>
+                           </div>
+
+                        </form>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- ------------------------------------SUCCESE------------------------------------ -->
+
+               <div class="succes-modal" id="Succes">
+                  <div class="succes-dialog">
+                     <div class="succes-content">
+                        <div class="succes__inner">
+                           <a class="form-close__btn" href="#close"><img src="./img/close-icon.svg" alt="icon"></a>
+                           <div class="ooops__top">
+                              <div class="ooops__top-text">
+                                 <h3 class="ooops__title">Succes!</h3>
+                              </div>
+                           </div>
+                           <div class="ooops__content">
+                              <img class="succes-icon" src="./img/succes-icon.svg" alt="icon">
+                              <p class="succes__desc">Your application has been accepted.
+                                 You will be contacted shortly for further details.</p>
+                           </div>
+                        </div>
+                        <div class="succes__btn-inner">
+                           <a class="succes__btn btn" href="#close">
+                              Continue
+                              <img src="./img/btn-icon.svg" alt="icon">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <!-- ------------------------------------OOOOOPS------------------------------------ -->
+
+               <div class="succes-modal" id="Ooops">
+                  <div class="succes-dialog">
+                     <div class="succes-content">
+                        <div class="succes__inner">
+                           <a class="form-close__btn" href="#close"><img src="./img/close-icon.svg" alt="icon"></a>
+                           <div class="ooops__top">
+                              <div class="ooops__top-text">
+                                 <h3 class="ooops__title">Oops!</h3>
+                              </div>
+                           </div>
+                           <div class="ooops__content">
+                              <img class="succes-icon" src="./img/ooops-icon.svg" alt="icon">
+                              <p class="succes__desc">Something went wrong. <br>
+                                 Please try again!</p>
+                           </div>
+                        </div>
+                        <div class="ooops__btn-inner">
+                           <div class="ooops__btns">
+                              <a class="ooops__btn btn" href="#openModal">
+                                 Try again
+                                 <img src="./img/btn-icon.svg" alt="icon">
+                              </a>
+                           </div>
+                        </div>
+
+
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- ------------------------------------MODAL END----------------------------- -->
+
+
+            </div>
+         </div>
+
+      </header>
+
+
+      <div class="main">
+         <img class="main-bg-img" src="./img/main-bg-img.svg" alt="bg img">
+         <div class="container">
+            <div class="main__inner">
+               <h1 class="main__title title">Where legal knowledge <span class="yellow">meets business strategy</span>
+               </h1>
+               <p class="main__desc desc">Collaborative solutions for</p>
+               <p class="main__desc desc yellow">complex legal challenges.</p>
+               <a href="#whatwedo" class="main__btn btn">
+                  Learn more
+                  <img class="btn-icon" src="./img/btn-icon.svg" alt="icon">
+               </a>
+               <div class="main__card">
+                  <div class="main-card__title subtitle">
+                     <img class="main-card__icon" src="./img/main-icon.svg" alt="icon">
+                     Who we are
+                  </div>
+                  <div class="main-card__text">
+                     <p class="main-card__desc subdesc">We are a team of experienced legal consultants dedicated to
+                        helping
+                        businesses succeed in today's fast-paced and ever-changing business environment.</p>
+                     <p class="main-card__desc subdesc">We understand that navigating legal challenges can be daunting
+                        and
+                        time-consuming, which is why we work closely with our clients to develop customized solutions
+                        that meet their specific needs and goals</p>
+                     <p class="main-card__desc subdesc"> Whether you're just starting out and need help with business
+                        incorporation, or you're an established business looking to expand into new markets, we have the
+                        expertise and industry knowledge to help you achieve your objectives.</p>
+                  </div>
+                  <div class="main-card__img"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="whatWeDo" id="whatwedo">
+         <div class="container">
+            <div class="whatWeDo__inner">
+               <h2 class="whatWeDo__title subtitle">What we do</h2>
+               <div class="whatWeDo__text">
+                  <p class="whatWeDo__desc desc">Our focus is on providing exceptional value to our clients by <span
+                        class="yellow">delivering
+                        high-quality legal services.</span> We believe in building strong, long-term relationships with
+                     our
+                     clientsbased on trust, integrity, and respect. </p>
+                  <p class="whatWeDo__desc desc">With our help, you can <span class="yellow"> navigate legal
+                        complexities
+                        with confidence and
+                        achieve</span>
+                     the success you deserve.</p>
+               </div>
+               <div class="whatWeDo__cards">
+                  <div class="whatWeDo-card__wrap">
+                     <div class="whatWeDo__card card-1" id="legal">
+                        <div class="whatWeDo-card__bg-img"></div>
+                        <p class="whatWeDo-card__title heading">Legal Consultancy </p>
+                        <div class="whatWeDo-card__text">
+                           <p class="whatWeDo-card__desc subdesc">Our legal consultancy services are designed to help
+                              businesses
+                              navigate complex legal issues and make informed decisions. Our team of legal experts
+                              will
+                              work closely with you to understand your unique needs and provide tailored solutions
+                              that
+                              meet your specific requirements.</p>
+                           <p class="whatWeDo-card__desc subdesc">Legal consultancy services are designed to provide
+                              legal
+                              advice and assistance to businesses in a wide range of areas. This can include contract
+                              law, commercial law, intellectual property, employment law, and regulatory compliance.
+                           </p>
+                           <p class="whatWeDo-card__desc subdesc">The goal of legal consultancy is to help businesses
+                              understand
+                              their legal obligations and reduce legal risks.</p>
+                        </div>
+                        <p class="link" href="#">Learn more</p>
+                        <img class="whatWeDo-card__img" src="./img/whatWeDo-card-img-1.png" alt="img">
+                     </div>
+                     <div class="whatWeDo__card card-2" id="business">
+                        <div class="whatWeDo-card__bg-img"></div>
+                        <p class="whatWeDo-card__title heading">Business Incorporation </p>
+                        <div class="whatWeDo-card__text">
+                           <p class="whatWeDo-card__desc subdesc">Starting a new business can be an exciting but
+                              challenging
+                              experience. We offer business incorporation services that help streamline the process
+                              and
+                              ensure compliance with all legal requirements. From entity formation to regulatory
+                              compliance, we can help you get your business up and running in no time.</p>
+                           <p class="whatWeDo-card__desc subdesc">Business incorporation is the process of legally
+                              forming a new
+                              businessentity.</p>
+                           <p class="whatWeDo-card__desc subdesc">This can involve choosing the appropriate legal
+                              structure
+                              (such as a corporation, limited liability company, or partnership), registering the
+                              business with the appropriate government authorities, and obtaining any necessary
+                              licenses
+                              and permits.</p>
+                        </div>
+                        <p class="link" href="#">Learn more</p>
+                        <img class="whatWeDo-card__img" src="./img/whatWeDo-card-img-2.png" alt="img">
+                     </div>
+                  </div>
+                  <div class="whatWeDo-card__wrap">
+                     <div class="whatWeDo__card card-3" id="banks">
+                        <div class="whatWeDo-card__bg-img"></div>
+                        <p class="whatWeDo-card__title heading">Banks & Alternative Payment Solutions</p>
+                        <div class="whatWeDo-card__text">
+                           <p class="whatWeDo-card__desc subdesc">Whether you need assistance with opening a bank
+                              account, setting up a merchant account, or accessing alternative payment solutions, we can
+                              help. Our team of experts has a deep understanding of the regulatory landscape and can
+                              help you navigate complex financial transactions with confidence.</p>
+                           <p class="whatWeDo-card__desc subdesc">Our team of experts has extensive experience in the
+                              banking industry, and can help you navigate the complexities of account opening with ease.
+                           </p>
+                           <p class="whatWeDo-card__desc subdesc">Whether you’re looking to open a bank account for your
+                              business, set up a merchant account, or gain access to alternative payment solutions, we
+                              have the knowledge and expertise to help.</p>
+                        </div>
+                        <p class="link" href="#">Learn more</p>
+                        <img class="whatWeDo-card__img" src="./img/whatWeDo-card-img-3.png" alt="img">
+                     </div>
+                     <div class="whatWeDo__card card-4" id="aml">
+                        <div class="whatWeDo-card__bg-img"></div>
+                        <p class="whatWeDo-card__title heading">AML & Compliance</p>
+                        <div class="whatWeDo-card__text">
+                           <p class="whatWeDo-card__desc subdesc">With our help, you can rest assured that your
+                              business
+                              is
+                              compliant with AML and other regulatory requirements, and that you are well-equipped to
+                              manage any potential risks that may arise. Let us help you protect your business and
+                              achieve long-term success.</p>
+                           <p class="whatWeDo-card__desc subdesc">We understand the importance of compliance with
+                              Anti-Money
+                              Laundering (AML) regulations and know that compliance is a top priority for businesses.
+                           </p>
+                           <p class="whatWeDo-card__desc subdesc">Our team stays up-to-date with the latest
+                              regulatory
+                              developments and industry trends to provide you with the most relevant and effective
+                              solutions.</p>
+                        </div>
+                        <p class="link" href="#">Learn more</p>
+                        <img class="whatWeDo-card__img" src="./img/whatWeDo-card-img-4.png" alt="img">
+                     </div>
+                  </div>
+                  <div class="whatWeDo__card card-5" id="hr">
+                     <div class="whatWeDo-card__bg-img"></div>
+                     <p class="whatWeDo-card__title heading">HR & Office Rent</p>
+                     <div class="whatWeDo-card__text">
+                        <p class="whatWeDo-card__desc subdesc">Whether you're looking to rent a new office space, set
+                           up a
+                           satellite office, or expand your team in a new market, we can help. </p>
+                        <p class="whatWeDo-card__desc subdesc">Our research services provide you with the insights
+                           and
+                           information you need to make informed decisions about your office space and talent needs.
+                        </p>
+                        <p class="whatWeDo-card__desc subdesc">When it comes to expanding your business, one of the
+                           most
+                           critical decisions you'll make is where to locate your office and how to build your team.
+                           Thisis where our HR & Office Rent research services come in. </p>
+                        <p class="whatWeDo-card__desc subdesc">Once we have a clear understanding of your needs, we
+                           conduct
+                           comprehensive research on the local real estate market and the availability of office
+                           spaces that meet your requirements.</p>
+                        <p class="whatWeDo-card__desc subdesc"> In addition to helping you find the right office
+                           space, we
+                           also conduct research on the local talent market to help you build the team you need to
+                           succeed.</p>
+                     </div>
+                     <p class="link" href="#">Learn more</p>
+                     <img class="whatWeDo-card__img" src="./img/whatWeDo-card-img-5.png" alt="img">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <footer class="footer">
+         <img class="footer-bg-img" src="./img/main-bg-img.svg" alt="bg img">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer__img">
+               </div>
+               <div class="footer__card">
+                  <div class="footer-card__text">
+                     <p class="footer__title subtitle">Ready to work with us?</p>
+                     <p class="footer__desc">Drop us a line and we will contact you shortly!</p>
+                  </div>
+                  <a href="#openModal" class="footer__btn btn">
+                     Contact Us
+                     <img class="btn-icon" src="./img/btn-icon.svg" alt="icon">
+                  </a>
+               </div>
+               <p class="footer__copyright">©2023 servicesynergy.io </p>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>

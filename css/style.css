@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+ */
+@import url('./normalize.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+html {
+   scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   cursor: pointer;
+}
+
+
+body {
+   background: #333847;
+   color: #FFFEF8;
+   width: 100%;
+   font-family: 'Inter', sans-serif;
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0 120px;
+}
+
+.wrapper {
+   overflow: hidden;
+   min-width: 100%;
+   position: relative;
+   height: 100%;
+   padding-top: 80px;
+}
+
+.invalid {
+   border-color: red !important;
+   color: red !important;
+}
+
+.btn {
+   display: flex;
+   align-items: center;
+   padding: 11px 18px 11px 20px;
+   background: #E19937;
+   border-radius: 12px;
+   gap: 12px;
+}
+
+.btn:hover {
+   background: rgba(225, 153, 55, 0.7);
+}
+
+.element-animation {
+   /* Скроем элемент в начальном состоянии */
+   opacity: 0;
+   transform: translateY(100px);
+}
+
+.element-animation.element-show {
+   opacity: 1;
+   transition: all 1s;
+   transform: translate(0);
+}
+
+.main__text {
+   overflow: hidden;
+}
+
+.yellow {
+   color: #E19937;
+}
+
+.title {
+   font-weight: 600;
+   font-size: 60px;
+   line-height: 84px;
+}
+
+.subtitle {
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 58px;
+}
+
+.heading {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 39px;
+}
+
+.desc {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+}
+
+.subdesc {
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 26px;
+}
+
+
+.text1-animation {
+   animation: textUp 0.5s linear;
+}
+
+.text2-animation {
+   animation: textUp 0.7s linear;
+}
+
+@keyframes textUp {
+   0% {
+      opacity: 0;
+      transform: translateY(100px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0%);
+   }
+}
+
+
+
+.bg-img {
+   position: absolute;
+   z-index: -1;
+}
+
+.cut {
+   display: block;
+}
+
+.text-underline {
+   text-decoration: underline;
+}
+
+.input {
+   background: rgba(225, 153, 55, 0.06);
+   border: 0.5px solid rgba(0, 0, 0, 0.16);
+   backdrop-filter: blur(13px);
+   border-radius: 16px;
+   height: 54px;
+   padding: 16px;
+   width: 246px;
+   outline: none;
+   color: #000000;
+   position: relative;
+}
+
+
+/* FORM START */
+
+
+.form__wrap {
+   background: rgba(255, 255, 255, 0.04);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(24.5px);
+   color: #000000;
+   border-radius: 10px;
+   max-width: 580px;
+   height: fit-content;
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   padding: 60px;
+}
+
+.form__title {
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 77px;
+   margin-bottom: 27px;
+}
+
+.input__wrap {
+   display: flex;
+   gap: 24px;
+   margin-bottom: 14px;
+}
+
+.modal__name {}
+
+.input__name {}
+
+.modal__surname {}
+
+.input__surname {}
+
+.modal__email {}
+
+.input__email {}
+
+.modal__subject {}
+
+.input__subject {}
+
+.modal__message {}
+
+.input__message {
+   height: 98px;
+   width: 100%;
+   resize: none;
+   color: #000000;
+   margin-bottom: 14px;
+}
+
+.checkbox {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+   color: #797772;
+}
+
+.checkbox__wrap {
+   position: relative;
+}
+
+.input__checkbox {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+}
+
+.input__checkbox+label {
+   display: inline-flex;
+   user-select: none;
+}
+
+.input__checkbox+label::before {
+   content: '';
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   flex-shrink: 0;
+   flex-grow: 0;
+   background: rgba(225, 153, 55, 0.06);
+   border: 0.5px solid rgba(0, 0, 0, 0.16);
+   backdrop-filter: blur(13px);
+   border-radius: 6px;
+   margin-right: 12px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.input__checkbox:not(:disabled):not(:checked)+label:hover::before {
+   border: 0.5px solid #E19937;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.input__checkbox:not(:disabled):active+label::before {
+   background: #247ACA;
+   border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.input__checkbox:checked+label::before {
+   border-color: #E19937;
+   background-color: #E19937;
+   background-image: url("../img/checkbox-checked.svg");
+}
+
+.input__checkbox:checked+label {
+   color: #000000;
+}
+
+.checkbox {
+   margin-bottom: 1em;
+}
+
+.modal__checkbox {}
+
+.modal__checkbox {}
+
+.form-modal__btn,
+.form-modal__btn1,
+.succes__btn,
+.ooops__btn {
+   border-radius: 16px;
+   position: relative;
+   background: #E19937;
+   backdrop-filter: blur(13px);
+   border-radius: 16px;
+   display: flex;
+   justify-content: center;
+   padding: 16px 28px;
+   outline: none;
+   color: #FFFFFF;
+   border: none;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+.form-modal__btn::before,
+.form-modal__btn1::before,
+.succes__btn::before,
+.ooops__btn::before {
+   background: #E19937;
+   backdrop-filter: blur(13px);
+   border-radius: 16px;
+   content: "";
+   position: absolute;
+   top: -1px;
+   bottom: -1px;
+   left: -1px;
+   right: -1px;
+   z-index: -1;
+
+}
+
+.succes__btn {
+   width: 319px;
+   height: 54px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+.ooops__btn {
+   width: 100%;
+   height: 54px;
+   display: flex;
+   justify-content: center;
+}
+
+/* FORM END */
+
+/* WORM START */
+
+.worm {
+   animation: worm-swim 3s infinite linear;
+}
+
+@keyframes worm-swim {
+   0% {
+      transform: translateY(0);
+   }
+
+   25% {
+      transform: translateY(40px);
+   }
+
+   50% {
+      transform: translateY(0);
+   }
+
+   75% {
+      transform: translateY(-40px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+
+
+/* WORM END */
+
+/* GOMODAL START */
+
+
+
+.goModal {
+   padding: 100px 0 50px;
+}
+
+.goModal__inner {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.goModal__title {
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 56px;
+   margin-bottom: 16px;
+}
+
+.goModal__subtitle {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 32px;
+   margin-bottom: 48px;
+}
+
+.goModal__desc {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 34px;
+   opacity: 0.8;
+   margin-bottom: 24px;
+}
+
+.goModal__btn {}
+
+
+
+/* GOMODAL END */
+
+@media screen and (max-width: 1024px) {
+   .container {
+      padding: 0 80px;
+   }
+
+   .goModal {
+      padding: 42px 0;
+   }
+
+   .goModal__title {
+      font-size: 39px;
+      line-height: 56px;
+   }
+
+   .goModal__subtitle {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 32px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+      padding: 0 60px;
+   }
+
+   .title {
+      font-weight: 600;
+      font-size: 46px;
+      line-height: 60px;
+   }
+
+   .subtitle {
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 46px;
+   }
+
+   .heading {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 34px;
+   }
+
+   .desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+   }
+
+   .subdesc {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 26px;
+   }
+
+   .form__title {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 34px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .container {
+      padding: 0 40px;
+   }
+
+
+
+   .input {
+      width: 100%;
+   }
+
+}
+
+@media screen and (max-width: 500px) {
+   .container {
+      padding: 0 10px;
+   }
+
+   .form__wrap {
+      padding: 24px;
+   }
+
+   .input__wrap {
+      gap: 14px;
+   }
+
+   .goModal__title {
+      font-size: 30px;
+      line-height: 42px;
+   }
+
+   .goModal__subtitle {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 16px;
+   }
+
+   .goModal__desc {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 16px;
+   }
+
+   .btn {
+      height: 48px;
+   }
+
+}
+
+@media screen and (max-width: 425px) {
+
+   .succes__btn,
+   .ooops__btn {
+      width: 100%;
+   }
+
+   .form__title {
+      max-width: 219px;
+   }
+}
